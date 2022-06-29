@@ -227,6 +227,33 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        iconSize: 35,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.play_circle_outline),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.account_circle),
+            label: '',
+          ),
+        ],
+        currentIndex: 0,
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Color(0xffE7111D),
+        unselectedItemColor: Colors.white,
+        // onTap: _onItemTapped,
+      ),
     );
   }
 }
